@@ -19,27 +19,3 @@ class Note {
 };
 exports.Note = Note;
 })(this);
-
-// EL6
-// (function(exports) {
-// class Circle {
-//     constructor() {
-//       this.radius = 10;
-//     }
-//   }
-// ;
-
-//   exports.Circle = Circle;
-// })(this);
-
-
-// EL5 
-
-// (function(exports) {
-//   function Circle() {
-//     this.radius = 10;
-//   };
-
-//   exports.Circle = Circle;
-// })(this);
-
