@@ -1,13 +1,13 @@
 // JS it function for tests:
 
-/*
+
 (function(){
   'use strict';
+
   
-  /**
-   * test function
-   * @param {string} desc
-   * @param {function} fn
+    test function
+    @param {string} desc
+    @param {function} fn
   function it(desc, fn) {
     try {
       fn();
@@ -19,14 +19,14 @@
     }
   }
 })();
-*/
+
 
 // assert function:
-/*
+
  function assert(isTrue) {
     if (!isTrue) {
       throw new Error();
     }
   }
-  */
+  
 

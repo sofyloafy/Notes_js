@@ -8,14 +8,22 @@
 //Stores the text in a text property on the note.
 //Has a method that will return the note text.
 
-class Note {
-  constructor() {
-    this.text = ""
-  };
+class Note { 
+  constructor(text) {
+    this.text = text;
+  }
   display(){
     console.log(this.text)
   };
-
-  
 };
+
+
+// class Person {
+//   constructor(first, last, age, eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+//   }
+// }
 
