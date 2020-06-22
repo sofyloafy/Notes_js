@@ -30,23 +30,27 @@
 //   }
   
 
+// (function(exports) {
+//   function testCircleRadiusDefaultsTo10() {
+//     var circle = new Circle();
+
+//     if (circle.radius !== 10) {
+//       throw new Error("Circle size is not 10");
+//     }
+//   };
+
+//   testCircleRadiusDefaultsTo10();
+// })(this);
+
 (function(exports) {
-  function testCircleRadiusDefaultsTo10() {
-    var circle = new Circle();
-
-    if (circle.radius !== 10) {
-      throw new Error("Circle size is not 10");
-    }
-  };
-
-  testCircleRadiusDefaultsTo10();
-})(this);
-
-(function(exports) {
-  function //name of the test() {
+  function undefinedmethodtester() {//name of the test() {
     var note = new Note();
 
     // the condition - if/else, something else
+    if (typeof note.display === "undefined") { 
+      throw new Error("Unfedined Method")
+    };
   };
-  //name of the test
+    undefinedmethodtester();
 })(this);
+
