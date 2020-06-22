@@ -19,4 +19,13 @@ Monday tasks:
 
 Tuesday tasks:
 
+1. Decide what the note list object is, and what its responsabilities will be
+* an object that takes the text from the note-model, and stores them in an array.
+* has a responsability to store the array of notes
+* has a responsability to return/display the array of notes
+* has a responsability to add text to a note
+2. test for these objects/functions, and its methods
+
+3. write the object into existance
+
 
