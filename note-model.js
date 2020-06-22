@@ -8,22 +8,36 @@
 //Stores the text in a text property on the note.
 //Has a method that will return the note text.
 
-class Note { 
-  constructor(text) {
-    this.text = text;
-  }
-  display(){
-    console.log(this.text)
-  };
-};
-
-
-// class Person {
-//   constructor(first, last, age, eye) {
-//     this.firstName = first;
-//     this.lastName = last;
-//     this.age = age;
-//     this.eyeColor = eye;
+// class Note { 
+//   constructor(text) {
+//     this.text = text;
 //   }
-// }
+//   display(){
+//     console.log(this.text)
+//   };
+// };
+
+EL 6
+
+(function(exports) {
+class Circle {
+    constructor() {
+      this.radius = 10;
+    }
+  }
+;
+
+  exports.Circle = Circle;
+})(this);
+
+
+EL5 
+
+(function(exports) {
+  function Circle() {
+    this.radius = 10;
+  };
+
+  exports.Circle = Circle;
+})(this);
 
