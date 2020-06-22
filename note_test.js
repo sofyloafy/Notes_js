@@ -54,3 +54,15 @@
     undefinedmethodtester();
 })(this);
 
+
+(function(exports) {
+  function objectHasOneArgument(text) {
+    var note = new Note(text);
+
+    if ( text === "undefined") { 
+      throw new Error("Unfedined argument")
+    };
+  };
+    objectHasOneArgument();
+})(this);
+
