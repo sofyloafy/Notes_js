@@ -7,6 +7,7 @@
 //Takes the text of a note upon instantiation e.g. My favourite language is JavaScript.
 //Stores the text in a text property on the note.
 //Has a method that will return the note text.
+(function(exports) {
 
 class Note { 
   constructor(text) {
@@ -16,6 +17,8 @@ class Note {
     console.log(this.text)
   };
 };
+exports.Note = Note;
+})(this);
 
 // EL6
 // (function(exports) {
