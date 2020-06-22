@@ -1,3 +1,4 @@
+"use strict";
 // JS it function for tests:
 
 
@@ -47,9 +48,10 @@
     var note = new Note();
 
     // the condition - if/else, something else
-    if (typeof note.display === "undefined") { 
-      throw new Error("Unfedined Method")
-    };
+    assert.isTrue(note.display === "undefined");
+    // if (typeof note.display === "undefined") { 
+    //   throw new Error("Unfedined Method")
+    // };
   };
     undefinedmethodtester();
 })(this);

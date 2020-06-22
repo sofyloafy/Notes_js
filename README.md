@@ -13,4 +13,4 @@ Monday tasks:
 
 * test the note object has a method called display that outputs a string -- DONE
 
-3. write the note object into existance.
+3. write the note object into existance.  -- DONE

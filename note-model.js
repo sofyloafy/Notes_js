@@ -1,3 +1,4 @@
+"use strict";
 // what is a module pattern?
 
 // what is the constructer/ prototype pattern needed for this function?
@@ -8,7 +9,6 @@
 //Stores the text in a text property on the note.
 //Has a method that will return the note text.
 (function(exports) {
-
 class Note { 
   constructor(text) {
     this.text = text;
