@@ -6,7 +6,7 @@
     };
 
   NoteListViews.prototype.view = function() {
-    var array = this.list.text
+    var array = this.list.list
     console.log(array)
     if(array.length < 1) {
       throw new Error ("Notes list empty")

@@ -6,8 +6,8 @@
     this.list = []
     };
 
-  NoteList.prototype.returnList = function() {
-    this.list.push(this.text)
+  NoteList.prototype.returnList = function(text) {
+    this.list.push(text)
     return this.list;
   };
 
