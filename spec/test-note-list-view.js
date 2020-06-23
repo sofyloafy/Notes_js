@@ -1,6 +1,11 @@
 'use strict';
 var list = new NoteList("To buy: milk");
-var listView = new NoteListViews(list.list,list.text);
+var listView = new NoteListViews(list);
+
+// if(listView.list.length !== 0) {
+//     throw new Error('Nothing here!');
+//     }
+
 (function (exports){
     function listViews(text){
     console.log(list.returnList())
@@ -9,7 +14,7 @@ var listView = new NoteListViews(list.list,list.text);
         throw new Error("Error");
     }
     else {
-        console.log("All good :white_tick:")
+        console.log("All good ✅")
     }
     };
 listViews()
