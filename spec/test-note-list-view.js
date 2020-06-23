@@ -19,18 +19,18 @@ listViews()
 
 
 
-// (function (exports){
-//     function listMultipleViews(text){
-//     var list = new NoteList("To buy: milk");
-//     var list = new NoteList("To do: buy milk");
-//     console.log(list.returnList())
-//     console.log(listView.view());
-//     if(listView.view() === `<ul><li><div>${text}</div></li></ul>`) {
-//         throw new Error("Error");
-//     }
-//     else {
-//         console.log("All good ✅")
-//     }
-//     };
-// listMultipleViews()
-// })(this);
+(function (exports){
+    function listMultipleViews(){
+    list.returnList("To buy: milk");
+    list.returnList("To do: buy milk");
+    console.log(list.returnList())
+    console.log(listView.view());
+    if(listView.view() !== `<ul><li><div>Hello</div></li><li><div>To buy: milk</div></li><li><div>To do: buy milk</div></li><li><div></div></li></ul>`) {
+        throw new Error("Error");
+    }
+    else {
+        console.log("All good ✅")
+    }
+    };
+listMultipleViews()
+})(this);

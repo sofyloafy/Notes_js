@@ -11,7 +11,7 @@
     if(array.length < 1) {
       throw new Error ("Notes list empty")
     } else {
-      return `<ul><li><div>${array}</div></li></ul>`
+      return "<ul><li><div>" + array.join("</div></li><li><div>") + "</div></li></ul>"
     }
   };
 
