@@ -8,14 +8,15 @@
 //Takes the text of a note upon instantiation e.g. My favourite language is JavaScript.
 //Stores the text in a text property on the note.
 //Has a method that will return the note text.
-(function(exports) {
-class Note { 
-  constructor(text) {
-    this.text = text;
-  }
-  display(){
-    console.log(this.text)
+
+(function (exports) {
+  function Note(text) {
+    this.text = text
+    };
+
+  Note.prototype.returnText = function() {
+    return this.text;
   };
-};
-exports.Note = Note;
+
+  exports.Note = Note
 })(this);

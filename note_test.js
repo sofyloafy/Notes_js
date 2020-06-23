@@ -1,26 +1,15 @@
 "use strict";
 
 (function(exports) {
-  function undefinedmethodtester() {
-    var note = new Note();
-
-    // assert.isTrue(note.display === "undefined"); needs fixing 
-    if (typeof note.display === "undefined") { 
-      throw new Error("Unfedined Method")
-    };
+  function testReturnsText() {
+    var note = new Note("I love JS");
+    if(note.returnText() !== "I love JS") {
+      throw new Error("Error");
+    }
+    else {
+      console.log("All good ✅")
+  }
   };
-    undefinedmethodtester();
+
+  testReturnsText();
 })(this);
-
-
-(function(exports) {
-  function objectHasOneArgument(text) {
-    var note = new Note(text);
-
-    if ( text === "undefined") { 
-      throw new Error("Unfedined argument")
-    };
-  };
-    objectHasOneArgument();
-})(this);
-
