@@ -7,7 +7,7 @@ var listView = new NoteListViews(list);
     list.returnList("Hello")
     console.log(list.list)
     console.log(listView.view());
-    if(listView.view() === `<ul><li><div>Hello</div></li></ul>`) {
+    if(listView.view() !== `<ul><li><div>Hello</div></li></ul>`) {
         throw new Error("Error");
     }
     else {
