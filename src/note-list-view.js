@@ -3,7 +3,7 @@
 (function (exports) {
   function NoteListViews(list, text) {
     this.text = text
-    this.list = list
+    this.list = new NoteList
     };
 
   NoteListViews.prototype.view = function() {
