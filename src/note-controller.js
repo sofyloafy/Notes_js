@@ -1,15 +1,21 @@
+"use strict";
+
 (function(exports) {
-  function NoteController(noteList){
-  this.noteList = noteList
+
+  function NoteController(noteList) {
+  this.noteList = noteList;
+  this.noteList.createNote("Favourite pie: pecan");
+  console.log(this.noteList.returnList()[0].text)
+
+
   }
-  console.log(noteList.returnList())
 
   NoteController.prototype.noteToPage = function() {
-    noteList.createNote("Favourite pie: pecan");
-    this.noteListView = new NoteListViews(this.noteList)
-    document.getElementById('app').innerHTML = (`<ul><li><div>Favourite pie: pecan</div></li></ul>`)
+    noteListViews = new NoteListViews(this.noteList)
+    console.log(noteListViews.view())
+    document.getElementById("app").innerHTML = this.noteListView.view();
 }
-console.log("im here")
 
 exports.NoteController = NoteController
 })(this);
+

@@ -6,10 +6,11 @@
     };
 
     NoteList.prototype.createNote = function(text) {
-      this.list.push(new Note(text))
+      var note = new Note(text);
+      this.list.push(note)
     };
 
-  NoteList.prototype.returnList = function(text) {
+  NoteList.prototype.returnList = function() {
     return this.list;
   };
 
