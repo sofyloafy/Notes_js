@@ -1,6 +1,7 @@
 (function(exports) {
   function NoteController(noteList)
-  this.NoteList.returnList("Favourite pie: pecan")
+  noteList = new NoteList
+  NoteList.returnList("Favourite pie: pecan");
 console.log(NoteList.returnList())
 
   NoteController.prototype.NoteToPage = function() {

@@ -1,13 +1,15 @@
 "use strict";
 
 (function (exports) {
-  function NoteList(text) {
-    this.text = text
+  function NoteList() {
     this.list = []
     };
 
+    NoteList.prototype.createNote = function(text) {
+      this.list.push(new Note(text))
+    };
+
   NoteList.prototype.returnList = function(text) {
-    this.list.push(text)
     return this.list;
   };
 

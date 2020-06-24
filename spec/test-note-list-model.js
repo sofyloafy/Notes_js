@@ -3,7 +3,9 @@
 (function(exports) {
   function testReturnsList() {
     var list = new NoteList();
-    assert.isTrue(list.returnList("I love JS")[0] === "I love JS")
+    list.createNote("I love JS")
+    console.log(list.list)
+    assert.isTrue(list.returnList()[0].text === "I love JS")
   }
 
   testReturnsList();
