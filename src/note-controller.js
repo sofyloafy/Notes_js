@@ -5,15 +5,13 @@
   function NoteController(noteList) {
   this.noteList = noteList;
   this.noteList.createNote("Favourite pie: pecan");
-  console.log(this.noteList.returnList()[0].text)
-
-
   }
 
   NoteController.prototype.noteToPage = function() {
-    noteListViews = new NoteListViews(this.noteList)
+    var noteListViews = new NoteListViews(this.noteList)
     console.log(noteListViews.view())
-    document.getElementById("app").innerHTML = this.noteListView.view();
+    var item = noteListViews.view()
+    document.getElementById("app").innerHTML = item;
 }
 
 exports.NoteController = NoteController
