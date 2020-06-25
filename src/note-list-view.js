@@ -7,7 +7,6 @@
 
   NoteListViews.prototype.view = function() {
     var note = this.list.returnList()
-    console.log(note)
     var string = "<ul>"
     note.forEach(element => {
     string += "<li><div>" + element.returnText() + "</div></li>"

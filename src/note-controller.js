@@ -9,9 +9,7 @@
 
   NoteController.prototype.noteToPage = function() {
     var noteListViews = new NoteListViews(this.noteList)
-    console.log(noteListViews.view())
     var item = noteListViews.view()
-    console.log(item)
     document.getElementById("app").innerHTML = (item);
 }
 
