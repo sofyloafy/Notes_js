@@ -11,7 +11,8 @@
     var noteListViews = new NoteListViews(this.noteList)
     console.log(noteListViews.view())
     var item = noteListViews.view()
-    document.getElementById("app").innerHTML = item;
+    console.log(item)
+    document.getElementById("app").innerHTML = (item);
 }
 
 exports.NoteController = NoteController
