@@ -6,11 +6,9 @@
     this.id = 0;
     };
 
-    NoteList.prototype.createNote = function(text) {
-      var id = this.id
+    NoteList.prototype.createNote = function(text,id = this.id) {
       var note = new Note(text, id);
       this.list.push(note)
-      console.log(this.id)
       this.increaseId();
     };
 

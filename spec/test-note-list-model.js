@@ -12,11 +12,15 @@
   function testReturnsList() {
     list.createNote("I love JS")
     assert.isTrue(list.returnList()[0].returnText() === "I love JS")
-    console.log(list.id)
-    assert.isTrue(list.id === 1)
 
   }
 
   testReturnsList();
+
+  function testId2() {
+    assert.isTrue(list.id === 1)
+  }
+
+  testId2();
   
 })(this);
