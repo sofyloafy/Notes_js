@@ -6,7 +6,7 @@
     };
 
   StringHTML.prototype.returnHTML = function() {
-    return `<div>${this.note}</div>`;
+    return `<div>${this.note.returnText()}</div>`;
   };
 
   exports.StringHTML = StringHTML
