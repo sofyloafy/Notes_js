@@ -9,7 +9,7 @@
     var note = this.list.returnList()
     var string = "<ul>"
     note.forEach(element => {
-    string += "<li><div>" + element.returnText() + "</div></li>"
+    string += "<li><div>" + element.returnText().slice(0,20) + "</div></li>"
   });
   return string += "</ul>"
 }
