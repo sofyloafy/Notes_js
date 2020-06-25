@@ -7,7 +7,7 @@ isTrue: function(assertionToCheck) {
     throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
     }
     else {
-        console.log("All good ✅")
+        console.log("All good 👍✅")
     }
 }
 };
