@@ -1,9 +1,5 @@
 "use strict";
 
-const { Note } = require("./note-model");
-const { StringHTML } = require("./single-note-view");
-const { NoteListViews } = require("./note-list-view");
-
 (function(exports) {
 
   function NoteController(noteList) {
