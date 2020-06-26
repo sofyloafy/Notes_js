@@ -24,7 +24,7 @@ NoteController.prototype.makeUrlChangeShowNoteForCurrentPage = function() {
 // function showNoteForCurrentPage() {
 //   showNote(getIDFromUrl(window.location));
 // };
-NoteController.prototype.returnListOfNotesView = function {
+NoteController.prototype.returnListOfNotesView = function () {
   return new NoteListViews(this.noteList)
 }
 
